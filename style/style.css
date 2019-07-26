@@ -221,11 +221,18 @@
   left: 70%;
 }
 
+@media (max-width: 767px) {
+  #gallery .first #myCarousel ol.carousel-indicators {
+    display: block;
+    top: 70vh;
+  }
+}
+
 #gallery .first #myCarousel ol.carousel-indicators .slide {
   display: inline-block;
   text-indent: 0px;
   width: 30px;
-  height: 100px;
+  height: 70px;
   background: rgba(0, 0, 0, 0);
   text-align: left;
   cursor: pointer;
@@ -333,14 +340,11 @@
   cursor: pointer;
 }
 
-#gallery .first #myCarousel .carousel-inner {
-  height: 100vh;
-}
-
 #gallery .first #myCarousel .carousel-inner .carousel-item .img-slider img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
