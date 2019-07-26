@@ -1,1 +1,275 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+#gallery .first {
+  background: black;
+  width: 100%;
+}
+
+#gallery .first .navigation {
+  width: 100%;
+  height: 300px;
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+#gallery .first .navigation .navigation-logo-listMenu {
+  width: 100%;
+}
+
+#gallery .first .navigation .navigation-logo-listMenu .logo {
+  color: white;
+  display: inline-block;
+}
+
+#gallery .first .navigation .navigation-logo-listMenu .nav-list-menu {
+  background: white;
+  display: block;
+  float: right;
+}
+
+#gallery .first .navigation .navigation-logo-listMenu .nav-list-menu ul {
+  padding: 0;
+  padding-right: 40px;
+  padding-left: 40px;
+  background: white;
+  z-index: 2;
+}
+
+#gallery .first .navigation .navigation-logo-listMenu .nav-list-menu .list-menu {
+  display: inline-block;
+  color: white;
+  height: 150px;
+  line-height: 300px;
+  text-align: center;
+  position: relative;
+  margin-left: 2px;
+}
+
+#gallery .first .navigation .navigation-logo-listMenu .nav-list-menu .list-menu a {
+  letter-spacing: 1px;
+  display: block;
+  padding: 52.5px 38px 52.5px;
+  font-size: 20px;
+  line-height: 38px;
+  text-transform: uppercase;
+  font-family: "Unica One", cursive;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  color: white;
+  height: 100%;
+}
+
+#gallery .first .navigation .navigation-logo-listMenu .nav-list-menu .list-menu a::before {
+  content: '';
+  -webkit-transform: skewX(-19deg);
+          transform: skewX(-19deg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: green;
+}
+
+#gallery .first #myCarousel {
+  position: static;
+}
+
+#gallery .first #myCarousel .green-eden-span {
+  position: absolute;
+  margin: 0 auto;
+  top: 40%;
+  width: 100%;
+  height: 140px;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+#gallery .first #myCarousel .green-eden-span #green-eden {
+  position: relative;
+  z-index: 5;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 100px;
+  line-height: 100px;
+  font-family: 'Unica One', cursive;
+  display: block;
+  width: 100%;
+}
+
+#gallery .first #myCarousel .green-eden-span #green-eden::before {
+  content: "";
+  width: 30px;
+  height: 4px;
+  position: relative;
+  display: block;
+  z-index: 5;
+  background: white;
+  cursor: pointer;
+}
+
+#gallery .first #myCarousel .green-eden-span #green-eden::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  position: relative;
+  display: block;
+  z-index: 5;
+  background: white;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+#gallery .first #myCarousel .green-eden-span p {
+  color: white;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  z-index: 5;
+  letter-spacing: 6px;
+  margin-top: -35px;
+  padding-left: 10px;
+}
+
+#gallery .first #myCarousel .green-eden-span p #pro {
+  color: #19270d;
+  font-weight: bold;
+}
+
+#gallery .first #myCarousel ol.carousel-indicators {
+  position: absolute;
+  top: 80vh;
+  list-style: none;
+  padding: 0;
+  left: 70%;
+}
+
+#gallery .first #myCarousel ol.carousel-indicators .slide {
+  display: inline-block;
+  text-indent: 0px;
+  width: 30px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0);
+  text-align: left;
+  cursor: pointer;
+}
+
+#gallery .first #myCarousel ol.carousel-indicators .slide1::before {
+  content: "1";
+  width: 30px;
+  height: 40px;
+  position: relative;
+  display: block;
+  color: white;
+  z-index: 5;
+  font-size: 50px;
+}
+
+#gallery .first #myCarousel ol.carousel-indicators .slide1.active::before {
+  content: "1";
+  width: 30px;
+  height: 40px;
+  position: relative;
+  display: block;
+  color: #489900;
+  z-index: 5;
+  font-size: 50px;
+}
+
+#gallery .first #myCarousel ol.carousel-indicators .slide1.active::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  position: relative;
+  display: block;
+  z-index: 5;
+  margin-top: 10px;
+  background: #489900;
+  cursor: pointer;
+}
+
+#gallery .first #myCarousel ol.carousel-indicators li.slide2::before {
+  content: "2";
+  width: 30px;
+  height: 40px;
+  position: relative;
+  display: block;
+  color: white;
+  z-index: 5;
+  font-size: 50px;
+}
+
+#gallery .first #myCarousel ol.carousel-indicators li.slide2.active::before {
+  content: "2";
+  width: 30px;
+  height: 40px;
+  position: relative;
+  display: block;
+  color: #489900;
+  z-index: 5;
+  font-size: 50px;
+}
+
+#gallery .first #myCarousel ol.carousel-indicators li.slide2.active::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  position: relative;
+  display: block;
+  z-index: 5;
+  margin-top: 10px;
+  background: #489900;
+  cursor: pointer;
+}
+
+#gallery .first #myCarousel ol.carousel-indicators li.slide3::before {
+  content: "3";
+  width: 30px;
+  height: 40px;
+  position: relative;
+  display: block;
+  color: white;
+  z-index: 5;
+  font-size: 50px;
+}
+
+#gallery .first #myCarousel ol.carousel-indicators li.slide3.active::before {
+  content: "3";
+  width: 30px;
+  height: 40px;
+  position: relative;
+  display: block;
+  color: #489900;
+  z-index: 5;
+  font-size: 50px;
+}
+
+#gallery .first #myCarousel ol.carousel-indicators li.slide3.active::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  position: relative;
+  display: block;
+  z-index: 5;
+  margin-top: 10px;
+  background: #489900;
+  cursor: pointer;
+}
+
+#gallery .first #myCarousel .carousel-inner {
+  height: 100vh;
+}
+
+#gallery .first #myCarousel .carousel-inner .carousel-item .img-slider img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+/*# sourceMappingURL=style.css.map */
