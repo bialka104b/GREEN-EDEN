@@ -1,53 +1,89 @@
-#gallery {
-  .first {
-    background:black;
+#navigation {
+  position: relative;
+  height: 120px;
+  z-index: 10;
+  .navigation {
     width:100%;
-    .navigation {
-      width:100%;
-      height:300px;
-      background:rgba(0, 0, 0, 0);
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      .navigation-logo-listMenu {
-        width:100%;
-        .logo {
-          color:white;
-          display:inline-block;
-        }
-        .nav-list-menu {
-          background:white;
-          display:block;
-          float:right;
-          ul{
-            padding: 0;
-            padding-right:40px;
-            padding-left:40px;
-            background:white;
-            z-index:2;
-          }
-          .list-menu {
-            display:inline-block;
-            color:white;
-            height: 150px;
-            line-height: 300px;
-            text-align: center;
+    background:rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    .navigation-logo-listMenu {
+      width: 100%;
+      height: 120px;
+      .logo {
+        display: inline-block;
+        width: 10%;
+        padding: 6px 20px;
+        p {
+          position: relative;
+          z-index: 5;
+          color: rgb(7, 7, 7);
+          letter-spacing: 5px;
+          font-size: 100px;
+          line-height: 100px;
+          font-family: 'Unica One', cursive;
+          display: block;
+          width: 100%;
+          margin: 0;
+          &::before {
+            content:"";
+            width: 45px;
+            height: 4px;
             position: relative;
-            margin-left: 2px;
-            a {
-              letter-spacing: 1px;
-              display: block;
-              padding: 52.5px 38px 52.5px;
-              font-size: 20px;
-              line-height: 38px;
-              text-transform: uppercase;
-              font-family: "Unica One", cursive;
-              position: relative;
-              z-index: 2;
-              text-decoration: none;
+            display: block;
+            z-index: 5;
+            background: rgb(2, 2, 2);
+            cursor:pointer;
+          }
+          &::after {
+            content:"";
+            width: 45px;
+            height: 4px;
+            position: relative;
+            display: block;
+            z-index: 5;
+            background: rgb(0, 0, 0);
+            cursor:pointer;
+          }
+        }
+      }
+      .nav-list-menu {
+        background:white;
+        display:block;
+        float:right;
+        ul{
+          padding: 0;
+          padding-right:40px;
+          padding-left:0;
+          z-index:2;
+          margin:0;
+          margin-left: -30px;
+        }
+        .list-menu {
+          display:inline-block;
+          color:white;
+          height: 120px;
+          text-align: center;
+          position: relative;
+          margin-left: 2px;
+          a {
+            letter-spacing: 1px;
+            display: block;
+            padding: 40px 38px 40px;
+            font-size: 20px;
+            line-height: 38px;
+            text-transform: uppercase;
+            font-family: "Unica One", cursive;
+            position: relative;
+            z-index: 2;
+            text-decoration: none;
+            color:black;
+            height:100%;
+            &.active, &:hover {
               color:white;
-              height:100%;
               &::before {
                 content: '';
                 transform: skewX(-19deg);
@@ -59,12 +95,33 @@
                 z-index: -1;
                 transition: .3s;
                 background: green;
+                border-radius:5px;
               }
+            }
+            &::before {
+              content: '';
+              transform: skewX(-19deg);
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              z-index: -1;
+              transition: .3s;
+              background: lightgreen;
+              border-radius:5px;
             }
           }
         }
       }
     }
+  }
+}
+#gallery {
+  margin-top: -120px;
+  .first {
+    background:black;
+    width:100%;
     #myCarousel {
       position:static;
       .green-eden-span {
@@ -87,7 +144,7 @@
           width: 100%;
           &::before {
             content:"";
-            width: 30px;
+            width: 45px;
             height: 4px;
             position: relative;
             display: block;
@@ -97,7 +154,7 @@
           }
           &::after {
             content:"";
-            width: 30px;
+            width: 45px;
             height: 4px;
             position: relative;
             display: block;
@@ -117,13 +174,15 @@
           letter-spacing: 6px;
           margin-top: -35px;
           padding-left: 10px;
+          background: rgba(0,0,0,0.5);
+          border-radius: 10px;
           #pro {
             color:#19270d;
             font-weight: bold;
+            color: lightgreen;
           }
         }
       }
-      
       ol.carousel-indicators {
         position:absolute;
         top: 80vh;
@@ -140,7 +199,6 @@
           cursor:pointer;
         }
         .slide1{
-          
           &::before {
             content: "1";
             width: 30px;
@@ -250,7 +308,6 @@
         height:100vh;
         .carousel-item {
           .img-slider {
-
             img {
               object-fit: cover;
               object-position: 50% 50%;
