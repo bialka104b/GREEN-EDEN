@@ -343,7 +343,7 @@
         z-index: 1;
         @media(max-width:767px){
           display: block;
-          top: 70Wiesz może jak pozbyć sięvh;
+          bottom: 0;
         }
         .slide {
           display:inline-block;
@@ -353,87 +353,76 @@
           background:rgba(0, 0, 0, 0);
           text-align: left;
           cursor:pointer;
-        }
-        .slide1{
           &::before {
-            content: "1";
+            font-size: 50px;
+            z-index: 5;
             width: 30px;
             height: 40px;
-            position: relative;
             display: block;
+            position: relative;
             color: white;
-            z-index: 5;
-            font-size: 50px;
+            text-align:center;
           }
           &.active {
-            &::before {
-              content: "1";
-              width: 30px;
-              height: 40px;
-              position: relative;
-              display: block;
-              color: #489900;
-              z-index: 5;
-              font-size: 50px;
-            }
             &::after {
               content: "";
-              width: 30px;
-              height: 4px;
-              position: relative;
-              display: block;
-              z-index: 5;
-              margin-top: 10px;
-              background: #489900;
-              cursor:pointer;
-            }
-          }
-        }
-        li.slide2 {
-          &::before {
-            content: "2";
-            width: 30px;
-            height: 40px;
-            position: relative;
-            display: block;
-            color: white;
-            z-index: 5;
-            font-size: 50px;
-          }
-          &.active {
-            &::before {
-              content: "2";
-              width: 30px;
-              height: 40px;
-              position: relative;
-              display: block;
-              color: #489900;;
-              z-index: 5;
-              font-size: 50px;
-            }
-            &::after {
-              content: "";
-              width: 30px;
-              height: 4px;
               position: relative;
               display: block;
               z-index: 5;
               margin-top: 10px;
               background: #489900;;
               cursor:pointer;
+              width: 30px;
+              height: 4px;
+              text-align: center;
+            }
+          }
+          
+          @media (max-width:767px) {
+            height: 30px;
+            
+            &::before {
+              font-size:30px;
+              height:30px;
+              width:20px;
+            }
+            &.active {
+              &::after {
+                width: 20px;
+                margin-top: -10px;
+              }
+            }
+          }
+        }
+        .slide1{
+          &::before {
+            content: "1";
+          }
+          &.active {
+            &::before {
+              content: "1";
+              position: relative;
+              display: block;
+              color: #489900;
+            }
+          }
+        }
+        li.slide2 {
+          &::before {
+            content: "2";
+          }
+          &.active {
+            &::before {
+              content: "2";
+              position: relative;
+              display: block;
+              color: #489900;
             }
           }
         }
         li.slide3 {
           &::before {
             content: "3";
-            width: 30px;
-            height: 40px;
-            position: relative;
-            display: block;
-            color: white;
-            z-index: 5;
-            font-size: 50px;
           }
           &.active {
             &::before {
@@ -442,20 +431,7 @@
               height: 40px;
               position: relative;
               display: block;
-              color: #489900;;
-              z-index: 5;
-              font-size: 50px;
-            }
-            &::after {
-              content: "";
-              width: 30px;
-              height: 4px;
-              position: relative;
-              display: block;
-              z-index: 5;
-              margin-top: 10px;
-              background: #489900;;
-              cursor:pointer;
+              color: #489900;
             }
           }
         }
@@ -486,7 +462,6 @@
         padding: 50px 23px 50px 23px;
         position: relative;
         z-index: 5;
-        
         &::before {
           content: '';
           display:block;
@@ -543,6 +518,36 @@
           font-family: "open sans", sans-serif;
           font-size:18px;
         }
+        a.btn-primary {
+          color: #fff;
+          background: #041103;
+          border: 3px solid #041103;
+          border-radius: 0;
+          padding: 6px 26px;
+          font-size: 24px;
+          display: inline-block;
+          text-align: center;
+          line-height: 1.2;
+          white-space: nowrap;
+          max-width: 100%;
+          text-overflow: ellipsis;
+          text-transform: uppercase;
+          cursor: pointer;
+          vertical-align: middle;
+          position: relative;
+          z-index: 1;
+          text-decoration: none;
+          font-family: cabin,sans-serif;
+          letter-spacing: 1px;
+          margin-top: 33px;
+        }
+        .btn::after {
+          content: '\e097 ';
+          font-family: fl-bigmug-line;
+          font-size: 20px;
+          line-height: 45px;
+          margin-left: 15px;
+        }
         @media (min-width:767px) {
           padding: 50px 50px 50px 50px;
         }
@@ -557,7 +562,11 @@
           object-fit: cover;
           object-position: 0 0;
         }
+        @media(max-width:767px) {
+          padding-left:0;
+        }
       }
+      
     }
   }
 }
