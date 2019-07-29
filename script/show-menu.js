@@ -7,5 +7,19 @@ $(document).ready(function(){
         } else {
             $('.navigation1').removeClass('fixed');
         }
+    })
+    $('.icon-menu').on('click', function(e){
+        e.preventDefault();
+        $('.nav-list-menu').slideToggle(500);
+        window.onresize = function() {
+            if (window.innerWidth > 767) {
+              $('.nav-list-menu').css({display : 'block'}); //the script reverses the operation of slideToogle if we extend the browser window
+            }
+        } 
+    });
+    $('#aboutAs').on('click', function(e){
+        e.preventDefault();
+        $('#list-menu1').slideToggle(500); // list AboutUS
+        
     });
 });

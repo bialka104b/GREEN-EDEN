@@ -20,17 +20,37 @@
     <link href="https://fonts.googleapis.com/css?family=Unica+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
     <!--DOCUMENT SCRIPT show-menu.js add to body-->
+    <!--LINK ICON FONT AWESOME 5-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v1.0.0/css/unicons.css">
+    <!--IMPORT JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<header id="navigation">
-      <script type="text/javascript" src="script/show-menu.js"></script>
+      <script type="text/javascript" src="script/show-menu.js"></script><!--Import document script show-menu.js-->
       <nav class="navigation1">
         <div class="navigation-logo-listMenu">
+          <div class="icon-menu"><i class='uil uil-list-ul'></i></div>
           <div class="logo"><p>G</p></div>
           <div class="nav-list-menu">
-            <ul>
+            <ul id="list-menu">
               <li class="list-menu"><a href="" class="active">HOME PAGE</a></li>
-              <li class="list-menu"><a href="">ABOUT US</a></li>
+              <li class="list-menu" id="aboutAs">
+                <a href="">ABOUT US<i class='uil uil-arrow-right show-arrow'></i></a>
+                <ul id="list-menu1">
+                  <li class="list-menu1"><a href="">HISTORY</a></li>
+                  <li class="list-menu1"><a href="">STUFF</a></li>
+                  <li class="list-menu1" id="news">
+                    <a href="">NEWS<i class='uil uil-arrow-right'></i></a>
+                    <ul id="list-menu2">
+                      <li class="list-menu2"><a href="">FRESH</a></li>
+                      <li class="list-menu2"><a href="">ARCHIVE</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
               <li class="list-menu"><a href="">GALLERY</a></li>
               <li class="list-menu"><a href="">SERVICES</a></li>
               <li class="list-menu"><a href="">CONTACTS</a></li>
@@ -38,20 +58,6 @@
           </div>
         </div>
       </nav>
-      <!-- <nav class="navigation2">
-          <div class="navigation-logo-listMenu">
-            <div class="logo"><p>G</p></div>
-            <div class="nav-list-menu">
-              <ul>
-                <li class="list-menu"><a href="" class="active">HOME PAGE</a></li>
-                <li class="list-menu"><a href="">ABOUT US</a></li>
-                <li class="list-menu"><a href="">GALLERY</a></li>
-                <li class="list-menu"><a href="">SERVICES</a></li>
-                <li class="list-menu"><a href="">CONTACTS</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav> -->
     </header>
 		<section id="gallery">
 			<div class="first">
@@ -99,7 +105,7 @@
           <div class="col-12 col-md-5 create-garden-text">
             <h2>CREATE THE PERFECT GARDEN</h2>
             <p>Welcome to the top rated exterior design bureau with a team of real experts in building exclusive modern spaces.</p>
-            <a href="#" class="btn btn-primary">More</a>
+            <a href="#" class="btn btn-primary">More<i class='uil uil-angle-right-b'></i></a>
           </div>
           <div class="col-12 col-md-7 create-garden-img">
             <img src="image/picture4.jpg" alt="" class="img-responsive">
