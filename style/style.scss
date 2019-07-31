@@ -1,3 +1,11 @@
+// $a: 100%;
+// $b: 50px;
+
+// div {
+//   height: calc(#{$a} - #{$b}); linia calc w sass zapisz to sobie
+//   background: #e53b2c;
+// }
+
 #navigation {
   position: relative;
   height: 120px;
@@ -838,6 +846,7 @@
       @media (min-width: 992px) {
         margin: 6px 0 40px;
       }
+      
     }
     p {
       margin-top: 36px;
