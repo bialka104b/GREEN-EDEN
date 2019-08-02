@@ -1297,6 +1297,10 @@
   }
 }
 
+#garden {
+  margin-bottom: 50px;
+}
+
 #garden .garden {
   position: relative;
   text-align: center;
@@ -1381,6 +1385,12 @@
   border-color: green;
 }
 
+@media (max-width: 1199px) and (min-width: 992px) {
+  #garden .garden .garden-text div.more a {
+    margin-top: 140px;
+  }
+}
+
 @media (max-width: 991px) {
   #garden .garden .garden-text h1 {
     font-size: 100px;
@@ -1400,5 +1410,130 @@
   #garden .garden .garden-text div.more a {
     margin-top: 140px;
   }
+}
+
+@media (max-width: 451px) {
+  #garden .garden .garden-text {
+    padding: 0 45px;
+  }
+  #garden .garden .garden-text h1 {
+    font-size: 50px;
+    letter-spacing: 10px;
+  }
+  #garden .garden .garden-text div.more a {
+    margin-top: 120px;
+  }
+}
+
+#testimonials {
+  height: 500px;
+  background: #BEEB53;
+  color: #445649;
+  padding: 100px 0;
+}
+
+#testimonials .testimonials {
+  text-align: center;
+  height: 100%;
+}
+
+#testimonials .testimonials div.line {
+  height: 4px;
+  background: green;
+  width: 60px;
+  margin: 0 auto;
+}
+
+#testimonials .testimonials h2 {
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-family: cabin,sans-serif;
+  display: block;
+  color: #445649;
+}
+
+@media (max-width: 1599px) and (min-width: 1200px) {
+  #testimonials .testimonials h2 {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #testimonials .testimonials h2 {
+    font-size: 55px;
+  }
+}
+
+#testimonials .testimonials div#carousel {
+  margin-top: 60px;
+}
+
+#testimonials .testimonials div#carousel #myCarousel1 {
+  height: 200px;
+}
+
+#testimonials .testimonials div#carousel #myCarousel1 h3 {
+  font-size: 40px;
+  line-height: 1.375;
+  font-family: unica one,cursive;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#testimonials .testimonials div#carousel #myCarousel1 p {
+  font-family: "open sans", serif;
+}
+
+#testimonials .testimonials div#carousel #myCarousel1 ol.carousel-indicators li {
+  background: green;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+}
+
+#testimonials .testimonials div#carousel #myCarousel1 ol.carousel-indicators li.active {
+  background: white;
+}
+
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-inner {
+  padding: 0 100px;
+}
+
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-inner .carousel-item {
+  overflow: hidden;
+}
+
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-inner .carousel-item .img-slider {
+  overflow: hidden;
+}
+
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-inner .carousel-item .img-slider h3, #testimonials .testimonials div#carousel #myCarousel1 .carousel-inner .carousel-item .img-slider p {
+  overflow: hidden;
+}
+
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev, #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next {
+  width: 50px;
+  bottom: auto;
+  opacity: 1;
+}
+
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev span i, #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next span i {
+  font-size: 60px;
+  color: green;
+}
+
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev:hover, #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next:hover {
+  opacity: .5;
+}
+
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next {
+  right: -100px;
+}
+
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev {
+  left: -100px;
 }
 /*# sourceMappingURL=style.css.map */
