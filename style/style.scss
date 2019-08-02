@@ -1098,8 +1098,6 @@ $brightGreen: #BEEB53;
 }
 #counters {
   background:url(../image/white-waves/white-waves.png);
-  //background:#F0F0F0;
-  height:500px;
   padding-top: 100px;
   padding-bottom: 100px;
   .row-counters{
@@ -1138,6 +1136,101 @@ $brightGreen: #BEEB53;
       }
       h4.count-text {
         color:green;
+      }
+      @media(max-width: 767px) {
+        margin-top:30px;
+      }
+    }
+  }
+}
+#garden {
+  .garden {
+    position: relative;
+    text-align: center;
+    .garden-img {
+      padding: 0 60px;
+      width:100%;
+      height:100%;
+      img {
+        width:100%;
+        object-fit: contain;
+      }
+      @media(max-width: 767px) {
+        padding: 0;
+      }
+    }
+    .garden-text {
+      position: absolute;
+      top:0;
+      width:100%;
+      height:100%;
+      margin-top:50px;
+      padding: 0 60px;
+      h1, h3 {width:100%;}
+      h1 {
+        font-size: 250px;
+        line-height: .8;
+        letter-spacing: 20px;
+        text-transform: uppercase;
+        font-family: "unica one" ,cursive;
+      }
+      h3 {
+        font-size: 40px;
+        line-height: 1.375;
+        text-transform: uppercase;
+        color: black;
+        letter-spacing: 2px;
+        font-family: cabin, sans-serif;
+      }
+      div.more {
+        position:static;
+        bottom:0;
+        a {
+          color: green;
+          background: #BEEB53;
+          border: 3px solid #BEEB53;
+          border-radius: 0;
+          padding: 6px 6px 6px 26px;
+          font-size: 24px;
+          text-align: center;
+          line-height: 1.2;
+          text-transform: uppercase;
+          cursor: pointer;
+          z-index: 1;
+          text-decoration: none;
+          font-family: cabin,sans-serif;
+          letter-spacing: 1px;
+          margin-top: 300px;
+          transition: .3s all ease;
+          &:hover {
+            color: white;
+            background: green;
+            border-color: green;
+          }
+        }
+      }
+      @media(max-width:991px) {
+        h1 {
+          font-size: 100px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+        div.more {
+          a {
+            margin-top: 150px;
+          }
+        }
+      }
+      @media(max-width: 767px) {
+        h1 {
+          font-size: 70px;
+        }
+        div.more {
+          a {
+            margin-top: 140px;
+          }
+        }
       }
     }
   }

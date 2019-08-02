@@ -1237,7 +1237,6 @@
 
 #counters {
   background: url(../image/white-waves/white-waves.png);
-  height: 500px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -1290,5 +1289,116 @@
 
 #counters .row-counters .icon-counter-description h4.count-text {
   color: green;
+}
+
+@media (max-width: 767px) {
+  #counters .row-counters .icon-counter-description {
+    margin-top: 30px;
+  }
+}
+
+#garden .garden {
+  position: relative;
+  text-align: center;
+}
+
+#garden .garden .garden-img {
+  padding: 0 60px;
+  width: 100%;
+  height: 100%;
+}
+
+#garden .garden .garden-img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 767px) {
+  #garden .garden .garden-img {
+    padding: 0;
+  }
+}
+
+#garden .garden .garden-text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  padding: 0 60px;
+}
+
+#garden .garden .garden-text h1, #garden .garden .garden-text h3 {
+  width: 100%;
+}
+
+#garden .garden .garden-text h1 {
+  font-size: 250px;
+  line-height: .8;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  font-family: "unica one" ,cursive;
+}
+
+#garden .garden .garden-text h3 {
+  font-size: 40px;
+  line-height: 1.375;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 2px;
+  font-family: cabin, sans-serif;
+}
+
+#garden .garden .garden-text div.more {
+  position: static;
+  bottom: 0;
+}
+
+#garden .garden .garden-text div.more a {
+  color: green;
+  background: #BEEB53;
+  border: 3px solid #BEEB53;
+  border-radius: 0;
+  padding: 6px 6px 6px 26px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.2;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 1;
+  text-decoration: none;
+  font-family: cabin,sans-serif;
+  letter-spacing: 1px;
+  margin-top: 300px;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+#garden .garden .garden-text div.more a:hover {
+  color: white;
+  background: green;
+  border-color: green;
+}
+
+@media (max-width: 991px) {
+  #garden .garden .garden-text h1 {
+    font-size: 100px;
+  }
+  #garden .garden .garden-text h3 {
+    font-size: 20px;
+  }
+  #garden .garden .garden-text div.more a {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 767px) {
+  #garden .garden .garden-text h1 {
+    font-size: 70px;
+  }
+  #garden .garden .garden-text div.more a {
+    margin-top: 140px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
