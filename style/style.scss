@@ -5,6 +5,7 @@
 //   height: calc(#{$a} - #{$b}); linia calc w sass zapisz to sobie
 //   background: #e53b2c;
 // }
+$brightGreen: #BEEB53;
 
 #navigation {
   position: relative;
@@ -110,7 +111,6 @@
                 z-index: -1;
                 transition: .3s;
                 background: green;
-                border-radius:5px;
               }
             }
             &::before {
@@ -123,8 +123,8 @@
               right: 0;
               z-index: -1;
               transition: .3s;
-              background: lightgreen;
-              border-radius:5px;
+              background: $brightGreen;
+        
             }
           }
           #list-menu1 {
@@ -396,7 +396,7 @@
           #pro {
             color:#19270d;
             font-weight: bold;
-            color: lightgreen;
+            color: $brightGreen;
           }
           @media(max-width:789px) {
             font-size:14px;
@@ -587,6 +587,13 @@
           &::before, &::after {
             display:none;
           }
+          div.more {
+            padding-left: 0;
+            padding-right: 0;
+            a {
+              width:auto;
+            }
+          }
         }
         h2 {
           font-size: 30px;
@@ -597,8 +604,11 @@
           font-family: cabin,sans-serif;
           display: block;
           color: #141414;
-          @media(max-width:1599px) and (min-width:992px) {
+          @media(max-width:1599px) and (min-width:1200px) {
             font-size: 45px;
+          }
+          @media(max-width: 1199px) and (min-width: 992px) {
+            font-size: 40px;
           }
         }
         @media (min-width:1600px) {
@@ -616,8 +626,8 @@
         }
         a.btn-primary {
           color: green;
-          background: lightgreen;
-          border: 3px solid lightgreen;
+          background: $brightGreen;
+          border: 3px solid $brightGreen;
           border-radius: 0;
           padding: 6px 6px 6px 26px;
           font-size: 24px;
@@ -739,6 +749,9 @@
           font-family: "open sans", sans-serif;
         }
       }
+      @media(max-width: 991px){
+        padding-bottom: 30px;
+      }
     }
   }
 }
@@ -755,8 +768,12 @@
       font-family: cabin,sans-serif;
       display: block;
       color: #141414;
+      padding: 0 53px;
       @media (max-width: 1599px) and (min-width: 992px) {
         font-size: 45px;
+      }
+      @media(max-width: 1199px) and (min-width: 992px) {
+        font-size: 40px;
       }
     }
     @media(min-width:1600px) {
@@ -771,7 +788,7 @@
       top:auto;
       bottom:0;
       @media (min-width: 992px) {
-        margin-top: 83px;
+        margin-top: 50px;
       }
     }
   }
@@ -829,14 +846,14 @@
           
         }
         a:hover {
-          color:lightgreen;
+          color:$brightGreen;
         } 
       }
     }
     a.btn-primary {
       color: green;
-      background: lightgreen;
-      border: 3px solid lightgreen;
+      background: $brightGreen;
+      border: 3px solid $brightGreen;
       border-radius: 0;
       padding: 6px 6px 6px 26px;
       font-size: 24px;
@@ -860,6 +877,7 @@
       padding: 87px 87px 0;
     }
   }
+  
   @media(max-width: 991px) {
     padding-bottom: 50px;
     .principles-decription, .principles-h2-img {
@@ -883,6 +901,23 @@
         padding-right: 40%;
         a {
           width:100%;
+        }
+      }
+    }
+  }
+  @media(max-width:767px) {
+    .principles-decription, .principles-h2-img {
+      ol {
+        li {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+      div.more {
+        padding-left: 0;
+        padding-right: 0;
+        a {
+          width:auto;
         }
       }
     }
@@ -949,7 +984,7 @@
       margin-bottom: -31px;
       padding: 87px 23px 87px 15px;
       z-index: 2;
-      background: lightgreen;
+      background: $brightGreen;
       h2 {
         font-size: 30px;
         line-height: 1.2;
@@ -958,9 +993,12 @@
         font-weight: 600;
         font-family: cabin,sans-serif;
         display: block;
-        color: green;
-        @media (max-width: 1599px) and (min-width: 992px) {
+        color: #445649;
+        @media (max-width: 1599px) and (min-width: 1200px) {
           font-size: 45px;
+        }
+        @media(max-width: 1199px) and (min-width: 992px) {
+          font-size: 40px;
         }
       }
       @media(min-width:1600px) {
@@ -974,11 +1012,11 @@
         font-weight: 500;
         font-family: "open sans", sans-serif;
         font-size: 18px;
-        color: green;
+        color: #445649;
       }
       a {
         color: green;
-        background: lightgreen;
+        background: $brightGreen;
         border: 3px solid green;
         border-radius: 0;
         padding: 6px 6px 6px 26px;
@@ -1003,7 +1041,7 @@
         content: "";
         position: absolute;
         height: 100%;
-        background: lightgreen;
+        background: $brightGreen;
         top: 0;
         right: 108px;
         z-index: -1;
@@ -1015,7 +1053,7 @@
         content: "";
         position: absolute;
         height: 100%;
-        background: lightgreen;
+        background: $brightGreen;
         top: 0;
         right: 108px;
         z-index: -1;
@@ -1029,7 +1067,6 @@
         padding: 50px;
         h2 {
           text-align: center;
-          color:black;
         }
       }
       @media(max-width:991px) {
@@ -1038,6 +1075,15 @@
           padding-right: 40%;
           a {
             width:100%;
+          }
+        }
+      }
+      @media(max-width:767px) {
+        div.more {
+          padding-left: 0;
+          padding-right: 0;
+          a {
+            width:auto;
           }
         }
       }
@@ -1071,6 +1117,7 @@
         margin:0 auto;
         padding:20px;
         box-shadow: 3px 4px 12px 8px rgba(0, 0, 0, 0.11);
+        transition: .3s all ease;
         i {
           color:green;
           font-size: 100px;
@@ -1078,10 +1125,19 @@
             margin:0;
           }
         }
+        &:hover {
+          background:green;
+          i {
+            color:white;
+          }
+        }
       }
       h4.number {
         margin-top:30px;
         color:black;
+      }
+      h4.count-text {
+        color:green;
       }
     }
   }
