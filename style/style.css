@@ -548,19 +548,19 @@
   width: 100%;
 }
 
-#create-garden {
+#create-garden, #tuscan-design {
   margin-top: -1px;
 }
 
-#create-garden .container-fluid {
+#create-garden .container-fluid, #tuscan-design .container-fluid {
   padding: 0;
 }
 
-#create-garden .container-fluid .row {
+#create-garden .container-fluid .row, #tuscan-design .container-fluid .row {
   margin: 0;
 }
 
-#create-garden .container-fluid .row .create-garden-text {
+#create-garden .container-fluid .row .create-garden-text, #tuscan-design .container-fluid .row .create-garden-text {
   background: white;
   position: relative;
   margin-top: -31px;
@@ -569,7 +569,7 @@
   z-index: 2;
 }
 
-#create-garden .container-fluid .row .create-garden-text::before {
+#create-garden .container-fluid .row .create-garden-text::before, #tuscan-design .container-fluid .row .create-garden-text::before {
   content: '';
   display: block;
   -webkit-transform: skewX(-19deg);
@@ -584,7 +584,7 @@
   height: 100%;
 }
 
-#create-garden .container-fluid .row .create-garden-text::after {
+#create-garden .container-fluid .row .create-garden-text::after, #tuscan-design .container-fluid .row .create-garden-text::after {
   content: '';
   display: block;
   -webkit-transform: skewX(19deg);
@@ -600,46 +600,46 @@
 }
 
 @media (max-width: 1372px) and (min-width: 992px) {
-  #create-garden .container-fluid .row .create-garden-text::before, #create-garden .container-fluid .row .create-garden-text::after {
+  #create-garden .container-fluid .row .create-garden-text::before, #create-garden .container-fluid .row .create-garden-text::after, #tuscan-design .container-fluid .row .create-garden-text::before, #tuscan-design .container-fluid .row .create-garden-text::after {
     left: 105px;
     width: 35vw;
   }
 }
 
 @media (max-width: 1199px) {
-  #create-garden .container-fluid .row .create-garden-text {
+  #create-garden .container-fluid .row .create-garden-text, #tuscan-design .container-fluid .row .create-garden-text {
     margin: 0;
     padding: 50px;
   }
-  #create-garden .container-fluid .row .create-garden-text h2 {
+  #create-garden .container-fluid .row .create-garden-text h2, #tuscan-design .container-fluid .row .create-garden-text h2 {
     text-align: center;
   }
 }
 
 @media (max-width: 991px) {
-  #create-garden .container-fluid .row .create-garden-text div.more {
+  #create-garden .container-fluid .row .create-garden-text div.more, #tuscan-design .container-fluid .row .create-garden-text div.more {
     padding-left: 40%;
     padding-right: 40%;
   }
-  #create-garden .container-fluid .row .create-garden-text div.more a {
+  #create-garden .container-fluid .row .create-garden-text div.more a, #tuscan-design .container-fluid .row .create-garden-text div.more a {
     width: 100%;
   }
 }
 
 @media (max-width: 767px) {
-  #create-garden .container-fluid .row .create-garden-text::before, #create-garden .container-fluid .row .create-garden-text::after {
+  #create-garden .container-fluid .row .create-garden-text::before, #create-garden .container-fluid .row .create-garden-text::after, #tuscan-design .container-fluid .row .create-garden-text::before, #tuscan-design .container-fluid .row .create-garden-text::after {
     display: none;
   }
-  #create-garden .container-fluid .row .create-garden-text div.more {
+  #create-garden .container-fluid .row .create-garden-text div.more, #tuscan-design .container-fluid .row .create-garden-text div.more {
     padding-left: 0;
     padding-right: 0;
   }
-  #create-garden .container-fluid .row .create-garden-text div.more a {
+  #create-garden .container-fluid .row .create-garden-text div.more a, #tuscan-design .container-fluid .row .create-garden-text div.more a {
     width: auto;
   }
 }
 
-#create-garden .container-fluid .row .create-garden-text h2 {
+#create-garden .container-fluid .row .create-garden-text h2, #tuscan-design .container-fluid .row .create-garden-text h2 {
   font-size: 30px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -651,27 +651,27 @@
 }
 
 @media (max-width: 1599px) and (min-width: 1200px) {
-  #create-garden .container-fluid .row .create-garden-text h2 {
+  #create-garden .container-fluid .row .create-garden-text h2, #tuscan-design .container-fluid .row .create-garden-text h2 {
     font-size: 45px;
   }
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
-  #create-garden .container-fluid .row .create-garden-text h2 {
+  #create-garden .container-fluid .row .create-garden-text h2, #tuscan-design .container-fluid .row .create-garden-text h2 {
     font-size: 40px;
   }
 }
 
 @media (min-width: 1600px) {
-  #create-garden .container-fluid .row .create-garden-text {
+  #create-garden .container-fluid .row .create-garden-text, #tuscan-design .container-fluid .row .create-garden-text {
     padding: 87px;
   }
-  #create-garden .container-fluid .row .create-garden-text h2 {
+  #create-garden .container-fluid .row .create-garden-text h2, #tuscan-design .container-fluid .row .create-garden-text h2 {
     font-size: 55px;
   }
 }
 
-#create-garden .container-fluid .row .create-garden-text p {
+#create-garden .container-fluid .row .create-garden-text p, #tuscan-design .container-fluid .row .create-garden-text p {
   margin-top: 36px;
   font-weight: 500;
   color: #7b7b7b;
@@ -679,7 +679,7 @@
   font-size: 18px;
 }
 
-#create-garden .container-fluid .row .create-garden-text a.btn-primary {
+#create-garden .container-fluid .row .create-garden-text a.btn-primary, #tuscan-design .container-fluid .row .create-garden-text a.btn-primary {
   color: green;
   background: #BEEB53;
   border: 3px solid #BEEB53;
@@ -699,17 +699,17 @@
   transition: .3s all ease;
 }
 
-#create-garden .container-fluid .row .create-garden-text a.btn-primary:hover {
+#create-garden .container-fluid .row .create-garden-text a.btn-primary:hover, #tuscan-design .container-fluid .row .create-garden-text a.btn-primary:hover {
   color: white;
   background: green;
   border-color: green;
 }
 
-#create-garden .container-fluid .row .create-garden-img {
+#create-garden .container-fluid .row .create-garden-img, #tuscan-design .container-fluid .row .create-garden-img {
   padding-right: 0;
 }
 
-#create-garden .container-fluid .row .create-garden-img::before {
+#create-garden .container-fluid .row .create-garden-img::before, #tuscan-design .container-fluid .row .create-garden-img::before {
   content: '';
   display: block;
   -webkit-transform: skewX(30deg);
@@ -723,7 +723,7 @@
   height: 31px;
 }
 
-#create-garden .container-fluid .row .create-garden-img::after {
+#create-garden .container-fluid .row .create-garden-img::after, #tuscan-design .container-fluid .row .create-garden-img::after {
   content: '';
   display: block;
   -webkit-transform: skewX(-30deg);
@@ -738,24 +738,24 @@
 }
 
 @media (max-width: 1199px) {
-  #create-garden .container-fluid .row .create-garden-img::before, #create-garden .container-fluid .row .create-garden-img::after {
+  #create-garden .container-fluid .row .create-garden-img::before, #create-garden .container-fluid .row .create-garden-img::after, #tuscan-design .container-fluid .row .create-garden-img::before, #tuscan-design .container-fluid .row .create-garden-img::after {
     display: none;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1372px) {
-  #create-garden .container-fluid .row .create-garden-img::before, #create-garden .container-fluid .row .create-garden-img::after {
+  #create-garden .container-fluid .row .create-garden-img::before, #create-garden .container-fluid .row .create-garden-img::after, #tuscan-design .container-fluid .row .create-garden-img::before, #tuscan-design .container-fluid .row .create-garden-img::after {
     width: 7vw;
   }
 }
 
 @media (max-width: 1520px) and (min-width: 1373px) {
-  #create-garden .container-fluid .row .create-garden-img::after, #create-garden .container-fluid .row .create-garden-img::before {
+  #create-garden .container-fluid .row .create-garden-img::after, #create-garden .container-fluid .row .create-garden-img::before, #tuscan-design .container-fluid .row .create-garden-img::after, #tuscan-design .container-fluid .row .create-garden-img::before {
     right: 43vw;
   }
 }
 
-#create-garden .container-fluid .row .create-garden-img img {
+#create-garden .container-fluid .row .create-garden-img img, #tuscan-design .container-fluid .row .create-garden-img img {
   min-width: 50%;
   display: block;
   width: 100%;
@@ -768,7 +768,7 @@
 }
 
 @media (max-width: 991px) {
-  #create-garden .container-fluid .row .create-garden-img {
+  #create-garden .container-fluid .row .create-garden-img, #tuscan-design .container-fluid .row .create-garden-img {
     padding-left: 0;
   }
 }
@@ -1592,5 +1592,29 @@
   #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev {
     left: 0;
   }
+}
+
+#maps-google {
+  height: 500px;
+  background: url(../image/white-waves/white-waves.png);
+  padding: 50px;
+}
+
+#maps-google .maps-container {
+  height: 100%;
+  padding: 50px 0 0 0;
+}
+
+#maps-google .maps-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 2px solid green;
+  display: block;
+  -webkit-box-shadow: 3px 4px 12px 8px rgba(0, 0, 0, 0.11);
+          box-shadow: 3px 4px 12px 8px rgba(0, 0, 0, 0.11);
+}
+
+#footer {
+  height: 200px;
 }
 /*# sourceMappingURL=style.css.map */
