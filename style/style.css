@@ -1412,9 +1412,9 @@
   }
 }
 
-@media (max-width: 451px) {
+@media (max-width: 490px) {
   #garden .garden .garden-text {
-    padding: 0 45px;
+    padding: 0 45px 20px;
   }
   #garden .garden .garden-text h1 {
     font-size: 50px;
@@ -1422,6 +1422,13 @@
   }
   #garden .garden .garden-text div.more a {
     margin-top: 120px;
+  }
+}
+
+@media (max-width: 415px) {
+  #garden .garden .garden-text div.more a {
+    margin-top: 100px;
+    font-size: 20px;
   }
 }
 
@@ -1435,6 +1442,7 @@
 #testimonials .testimonials {
   text-align: center;
   height: 100%;
+  padding: 0;
 }
 
 #testimonials .testimonials div.line {
@@ -1487,6 +1495,10 @@
   font-family: "open sans", serif;
 }
 
+#testimonials .testimonials div#carousel #myCarousel1 ol.carousel-indicators {
+  bottom: -50px;
+}
+
 #testimonials .testimonials div#carousel #myCarousel1 ol.carousel-indicators li {
   background: green;
   height: 5px;
@@ -1514,10 +1526,20 @@
   overflow: hidden;
 }
 
+@media (max-width: 767px) {
+  #testimonials .testimonials div#carousel #myCarousel1 .carousel-inner {
+    padding: 0 30px;
+  }
+}
+
 #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev, #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next {
   width: 50px;
   bottom: auto;
   opacity: 1;
+}
+
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev span, #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next span {
+  width: 100%;
 }
 
 #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev span i, #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next span i {
@@ -1525,15 +1547,50 @@
   color: green;
 }
 
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev span i::before, #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next span i::before {
+  margin: 0;
+  width: 100%;
+}
+
 #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev:hover, #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next:hover {
   opacity: .5;
+}
+
+@media (max-width: 991px) {
+  #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev, #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next {
+    bottom: 80%;
+  }
 }
 
 #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next {
   right: -100px;
 }
 
+@media (max-width: 1350px) and (min-width: 992px) {
+  #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next {
+    right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next {
+    right: 0;
+  }
+}
+
 #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev {
   left: -100px;
+}
+
+@media (max-width: 1350px) and (min-width: 992px) {
+  #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev {
+    left: -0;
+  }
+}
+
+@media (max-width: 991px) {
+  #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev {
+    left: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

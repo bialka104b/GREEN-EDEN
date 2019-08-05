@@ -1243,8 +1243,8 @@ $brightGreen: #BEEB53;
           }
         }
       }
-      @media(max-width:451px) {
-        padding: 0 45px;
+      @media(max-width:490px) {
+        padding: 0 45px 20px;
         h1 {
           font-size: 50px;
           letter-spacing: 10px;
@@ -1252,6 +1252,14 @@ $brightGreen: #BEEB53;
         div.more {
           a {
             margin-top: 120px;
+          }
+        }
+      }
+      @media(max-width: 415px) {
+        div.more {
+          a {
+            margin-top: 100px;
+            font-size: 20px;
           }
         }
       }
@@ -1267,6 +1275,7 @@ $brightGreen: #BEEB53;
   .testimonials {
     text-align:center;
     height:100%;
+    padding: 0;
     div.line {
       height:4px;
       background:green;
@@ -1304,6 +1313,7 @@ $brightGreen: #BEEB53;
         }
         height:200px;
         ol.carousel-indicators {
+          bottom: -50px;
           li {
             background:green;
             height:5px;
@@ -1325,26 +1335,49 @@ $brightGreen: #BEEB53;
               }
             }
           }
+          @media(max-width:767px) {
+            padding:0 30px;
+          }
         }
         .carousel-control-prev, .carousel-control-next {
           width:50px;
           bottom:auto;
           opacity: 1;
           span {
+            width:100%;
             i {
               font-size: 60px;
               color:green;
+              &::before {
+                margin: 0;
+                width:100%;
+              }
             }
           }
           &:hover {
             opacity: .5;
           }
+          @media(max-width:991px) {
+            bottom: 80%;
+          }
         }
         .carousel-control-next {
           right: -100px;
+          @media(max-width:1350px) and (min-width:992px) {
+            right:0;
+          }
+          @media(max-width: 991px) {
+            right:0;
+          }
         }
         .carousel-control-prev {
           left: -100px;
+          @media(max-width:1350px) and (min-width:992px) {
+            left:-0;
+          }
+          @media(max-width: 991px) {
+            left:0;
+          }
         }
       }
     }
