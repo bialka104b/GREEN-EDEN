@@ -37,7 +37,7 @@
   letter-spacing: 5px;
   font-size: 100px;
   line-height: 100px;
-  font-family: 'Unica One', cursive;
+  font-family: "Unica One", cursive;
   display: block;
   width: 100%;
   margin: 0;
@@ -113,7 +113,7 @@
 }
 
 #navigation .navigation1 .navigation-logo-listMenu .nav-list-menu .list-menu a.active::before, #navigation .navigation1 .navigation-logo-listMenu .nav-list-menu .list-menu a:hover::before {
-  content: '';
+  content: "";
   -webkit-transform: skewX(-19deg);
           transform: skewX(-19deg);
   position: absolute;
@@ -122,13 +122,13 @@
   left: 0;
   right: 0;
   z-index: -1;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background: green;
 }
 
 #navigation .navigation1 .navigation-logo-listMenu .nav-list-menu .list-menu a::before {
-  content: '';
+  content: "";
   -webkit-transform: skewX(-19deg);
           transform: skewX(-19deg);
   position: absolute;
@@ -137,9 +137,9 @@
   left: 0;
   right: 0;
   z-index: -1;
-  -webkit-transition: .3s;
-  transition: .3s;
-  background: #BEEB53;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #beeb53;
 }
 
 #navigation .navigation1 .navigation-logo-listMenu .nav-list-menu .list-menu #list-menu1 {
@@ -371,7 +371,7 @@
   letter-spacing: 5px;
   font-size: 100px;
   line-height: 100px;
-  font-family: 'Unica One', cursive;
+  font-family: "Unica One", cursive;
   display: block;
   width: 100%;
 }
@@ -414,7 +414,7 @@
 
 #gallery .first #myCarousel .green-eden-span p {
   color: white;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
   font-size: 18px;
   font-weight: 400;
   position: relative;
@@ -429,7 +429,7 @@
 #gallery .first #myCarousel .green-eden-span p #pro {
   color: #19270d;
   font-weight: bold;
-  color: #BEEB53;
+  color: #beeb53;
 }
 
 @media (max-width: 789px) {
@@ -548,19 +548,23 @@
   width: 100%;
 }
 
-#create-garden, #tuscan-design {
+#create-garden,
+#tuscan-design {
   margin-top: -1px;
 }
 
-#create-garden .container-fluid, #tuscan-design .container-fluid {
+#create-garden .container-fluid,
+#tuscan-design .container-fluid {
   padding: 0;
 }
 
-#create-garden .container-fluid .row, #tuscan-design .container-fluid .row {
+#create-garden .container-fluid .row,
+#tuscan-design .container-fluid .row {
   margin: 0;
 }
 
-#create-garden .container-fluid .row .create-garden-text, #tuscan-design .container-fluid .row .create-garden-text {
+#create-garden .container-fluid .row .create-garden-text,
+#tuscan-design .container-fluid .row .create-garden-text {
   background: white;
   position: relative;
   margin-top: -31px;
@@ -569,8 +573,9 @@
   z-index: 2;
 }
 
-#create-garden .container-fluid .row .create-garden-text::before, #tuscan-design .container-fluid .row .create-garden-text::before {
-  content: '';
+#create-garden .container-fluid .row .create-garden-text::before,
+#tuscan-design .container-fluid .row .create-garden-text::before {
+  content: "";
   display: block;
   -webkit-transform: skewX(-19deg);
           transform: skewX(-19deg);
@@ -584,8 +589,9 @@
   height: 100%;
 }
 
-#create-garden .container-fluid .row .create-garden-text::after, #tuscan-design .container-fluid .row .create-garden-text::after {
-  content: '';
+#create-garden .container-fluid .row .create-garden-text::after,
+#tuscan-design .container-fluid .row .create-garden-text::after {
+  content: "";
   display: block;
   -webkit-transform: skewX(19deg);
           transform: skewX(19deg);
@@ -600,78 +606,94 @@
 }
 
 @media (max-width: 1372px) and (min-width: 992px) {
-  #create-garden .container-fluid .row .create-garden-text::before, #create-garden .container-fluid .row .create-garden-text::after, #tuscan-design .container-fluid .row .create-garden-text::before, #tuscan-design .container-fluid .row .create-garden-text::after {
+  #create-garden .container-fluid .row .create-garden-text::before, #create-garden .container-fluid .row .create-garden-text::after,
+  #tuscan-design .container-fluid .row .create-garden-text::before,
+  #tuscan-design .container-fluid .row .create-garden-text::after {
     left: 105px;
     width: 35vw;
   }
 }
 
 @media (max-width: 1199px) {
-  #create-garden .container-fluid .row .create-garden-text, #tuscan-design .container-fluid .row .create-garden-text {
+  #create-garden .container-fluid .row .create-garden-text,
+  #tuscan-design .container-fluid .row .create-garden-text {
     margin: 0;
     padding: 50px;
   }
-  #create-garden .container-fluid .row .create-garden-text h2, #tuscan-design .container-fluid .row .create-garden-text h2 {
+  #create-garden .container-fluid .row .create-garden-text h2,
+  #tuscan-design .container-fluid .row .create-garden-text h2 {
     text-align: center;
   }
 }
 
 @media (max-width: 991px) {
-  #create-garden .container-fluid .row .create-garden-text div.more, #tuscan-design .container-fluid .row .create-garden-text div.more {
+  #create-garden .container-fluid .row .create-garden-text div.more,
+  #tuscan-design .container-fluid .row .create-garden-text div.more {
     padding-left: 40%;
     padding-right: 40%;
   }
-  #create-garden .container-fluid .row .create-garden-text div.more a, #tuscan-design .container-fluid .row .create-garden-text div.more a {
+  #create-garden .container-fluid .row .create-garden-text div.more a,
+  #tuscan-design .container-fluid .row .create-garden-text div.more a {
     width: 100%;
   }
 }
 
 @media (max-width: 767px) {
-  #create-garden .container-fluid .row .create-garden-text::before, #create-garden .container-fluid .row .create-garden-text::after, #tuscan-design .container-fluid .row .create-garden-text::before, #tuscan-design .container-fluid .row .create-garden-text::after {
+  #create-garden .container-fluid .row .create-garden-text::before, #create-garden .container-fluid .row .create-garden-text::after,
+  #tuscan-design .container-fluid .row .create-garden-text::before,
+  #tuscan-design .container-fluid .row .create-garden-text::after {
     display: none;
   }
-  #create-garden .container-fluid .row .create-garden-text div.more, #tuscan-design .container-fluid .row .create-garden-text div.more {
+  #create-garden .container-fluid .row .create-garden-text div.more,
+  #tuscan-design .container-fluid .row .create-garden-text div.more {
     padding-left: 0;
     padding-right: 0;
   }
-  #create-garden .container-fluid .row .create-garden-text div.more a, #tuscan-design .container-fluid .row .create-garden-text div.more a {
+  #create-garden .container-fluid .row .create-garden-text div.more a,
+  #tuscan-design .container-fluid .row .create-garden-text div.more a {
     width: auto;
   }
 }
 
-#create-garden .container-fluid .row .create-garden-text h2, #tuscan-design .container-fluid .row .create-garden-text h2 {
+#create-garden .container-fluid .row .create-garden-text h2,
+#tuscan-design .container-fluid .row .create-garden-text h2 {
   font-size: 30px;
   line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 600;
-  font-family: cabin,sans-serif;
+  font-family: cabin, sans-serif;
   display: block;
   color: #141414;
 }
 
 @media (max-width: 1599px) and (min-width: 1200px) {
-  #create-garden .container-fluid .row .create-garden-text h2, #tuscan-design .container-fluid .row .create-garden-text h2 {
+  #create-garden .container-fluid .row .create-garden-text h2,
+  #tuscan-design .container-fluid .row .create-garden-text h2 {
     font-size: 45px;
   }
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
-  #create-garden .container-fluid .row .create-garden-text h2, #tuscan-design .container-fluid .row .create-garden-text h2 {
+  #create-garden .container-fluid .row .create-garden-text h2,
+  #tuscan-design .container-fluid .row .create-garden-text h2 {
     font-size: 40px;
   }
 }
 
 @media (min-width: 1600px) {
-  #create-garden .container-fluid .row .create-garden-text, #tuscan-design .container-fluid .row .create-garden-text {
+  #create-garden .container-fluid .row .create-garden-text,
+  #tuscan-design .container-fluid .row .create-garden-text {
     padding: 87px;
   }
-  #create-garden .container-fluid .row .create-garden-text h2, #tuscan-design .container-fluid .row .create-garden-text h2 {
+  #create-garden .container-fluid .row .create-garden-text h2,
+  #tuscan-design .container-fluid .row .create-garden-text h2 {
     font-size: 55px;
   }
 }
 
-#create-garden .container-fluid .row .create-garden-text p, #tuscan-design .container-fluid .row .create-garden-text p {
+#create-garden .container-fluid .row .create-garden-text p,
+#tuscan-design .container-fluid .row .create-garden-text p {
   margin-top: 36px;
   font-weight: 500;
   color: #7b7b7b;
@@ -679,10 +701,11 @@
   font-size: 18px;
 }
 
-#create-garden .container-fluid .row .create-garden-text a.btn-primary, #tuscan-design .container-fluid .row .create-garden-text a.btn-primary {
+#create-garden .container-fluid .row .create-garden-text a.btn-primary,
+#tuscan-design .container-fluid .row .create-garden-text a.btn-primary {
   color: green;
-  background: #BEEB53;
-  border: 3px solid #BEEB53;
+  background: #beeb53;
+  border: 3px solid #beeb53;
   border-radius: 0;
   padding: 6px 6px 6px 26px;
   font-size: 24px;
@@ -692,25 +715,28 @@
   cursor: pointer;
   z-index: 1;
   text-decoration: none;
-  font-family: cabin,sans-serif;
+  font-family: cabin, sans-serif;
   letter-spacing: 1px;
   margin-top: 33px;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
-#create-garden .container-fluid .row .create-garden-text a.btn-primary:hover, #tuscan-design .container-fluid .row .create-garden-text a.btn-primary:hover {
+#create-garden .container-fluid .row .create-garden-text a.btn-primary:hover,
+#tuscan-design .container-fluid .row .create-garden-text a.btn-primary:hover {
   color: white;
   background: green;
   border-color: green;
 }
 
-#create-garden .container-fluid .row .create-garden-img, #tuscan-design .container-fluid .row .create-garden-img {
+#create-garden .container-fluid .row .create-garden-img,
+#tuscan-design .container-fluid .row .create-garden-img {
   padding-right: 0;
 }
 
-#create-garden .container-fluid .row .create-garden-img::before, #tuscan-design .container-fluid .row .create-garden-img::before {
-  content: '';
+#create-garden .container-fluid .row .create-garden-img::before,
+#tuscan-design .container-fluid .row .create-garden-img::before {
+  content: "";
   display: block;
   -webkit-transform: skewX(30deg);
           transform: skewX(30deg);
@@ -723,8 +749,9 @@
   height: 31px;
 }
 
-#create-garden .container-fluid .row .create-garden-img::after, #tuscan-design .container-fluid .row .create-garden-img::after {
-  content: '';
+#create-garden .container-fluid .row .create-garden-img::after,
+#tuscan-design .container-fluid .row .create-garden-img::after {
+  content: "";
   display: block;
   -webkit-transform: skewX(-30deg);
           transform: skewX(-30deg);
@@ -738,24 +765,31 @@
 }
 
 @media (max-width: 1199px) {
-  #create-garden .container-fluid .row .create-garden-img::before, #create-garden .container-fluid .row .create-garden-img::after, #tuscan-design .container-fluid .row .create-garden-img::before, #tuscan-design .container-fluid .row .create-garden-img::after {
+  #create-garden .container-fluid .row .create-garden-img::before, #create-garden .container-fluid .row .create-garden-img::after,
+  #tuscan-design .container-fluid .row .create-garden-img::before,
+  #tuscan-design .container-fluid .row .create-garden-img::after {
     display: none;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1372px) {
-  #create-garden .container-fluid .row .create-garden-img::before, #create-garden .container-fluid .row .create-garden-img::after, #tuscan-design .container-fluid .row .create-garden-img::before, #tuscan-design .container-fluid .row .create-garden-img::after {
+  #create-garden .container-fluid .row .create-garden-img::before, #create-garden .container-fluid .row .create-garden-img::after,
+  #tuscan-design .container-fluid .row .create-garden-img::before,
+  #tuscan-design .container-fluid .row .create-garden-img::after {
     width: 7vw;
   }
 }
 
 @media (max-width: 1520px) and (min-width: 1373px) {
-  #create-garden .container-fluid .row .create-garden-img::after, #create-garden .container-fluid .row .create-garden-img::before, #tuscan-design .container-fluid .row .create-garden-img::after, #tuscan-design .container-fluid .row .create-garden-img::before {
+  #create-garden .container-fluid .row .create-garden-img::after, #create-garden .container-fluid .row .create-garden-img::before,
+  #tuscan-design .container-fluid .row .create-garden-img::after,
+  #tuscan-design .container-fluid .row .create-garden-img::before {
     right: 43vw;
   }
 }
 
-#create-garden .container-fluid .row .create-garden-img img, #tuscan-design .container-fluid .row .create-garden-img img {
+#create-garden .container-fluid .row .create-garden-img img,
+#tuscan-design .container-fluid .row .create-garden-img img {
   min-width: 50%;
   display: block;
   width: 100%;
@@ -768,7 +802,8 @@
 }
 
 @media (max-width: 991px) {
-  #create-garden .container-fluid .row .create-garden-img, #tuscan-design .container-fluid .row .create-garden-img {
+  #create-garden .container-fluid .row .create-garden-img,
+  #tuscan-design .container-fluid .row .create-garden-img {
     padding-left: 0;
   }
 }
@@ -780,7 +815,9 @@
   background: url(../image/white-waves/white-waves.png);
 }
 
-#landscape-drainage-photo .landscape-drainage-photo .l-d-p .landscape, #landscape-drainage-photo .landscape-drainage-photo .l-d-p .drainage, #landscape-drainage-photo .landscape-drainage-photo .l-d-p .photo-gallery {
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .landscape,
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .drainage,
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .photo-gallery {
   text-align: center;
   -webkit-box-shadow: 3px 4px 12px 8px rgba(0, 0, 0, 0.11);
           box-shadow: 3px 4px 12px 8px rgba(0, 0, 0, 0.11);
@@ -788,33 +825,45 @@
   background-color: white;
 }
 
-#landscape-drainage-photo .landscape-drainage-photo .l-d-p .landscape i, #landscape-drainage-photo .landscape-drainage-photo .l-d-p .drainage i, #landscape-drainage-photo .landscape-drainage-photo .l-d-p .photo-gallery i {
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .landscape i,
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .drainage i,
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .photo-gallery i {
   font-size: 60px;
   font-weight: 400;
   color: green;
 }
 
-#landscape-drainage-photo .landscape-drainage-photo .l-d-p .landscape div, #landscape-drainage-photo .landscape-drainage-photo .l-d-p .drainage div, #landscape-drainage-photo .landscape-drainage-photo .l-d-p .photo-gallery div {
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .landscape div,
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .drainage div,
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .photo-gallery div {
   width: 60px;
   background: green;
   margin: 15px auto 25px;
   height: 4px;
 }
 
-#landscape-drainage-photo .landscape-drainage-photo .l-d-p .landscape h4, #landscape-drainage-photo .landscape-drainage-photo .l-d-p .drainage h4, #landscape-drainage-photo .landscape-drainage-photo .l-d-p .photo-gallery h4 {
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .landscape h4,
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .drainage h4,
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .photo-gallery h4 {
   font-family: cabin, sans-serif;
 }
 
-#landscape-drainage-photo .landscape-drainage-photo .l-d-p .landscape h4 a, #landscape-drainage-photo .landscape-drainage-photo .l-d-p .drainage h4 a, #landscape-drainage-photo .landscape-drainage-photo .l-d-p .photo-gallery h4 a {
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .landscape h4 a,
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .drainage h4 a,
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .photo-gallery h4 a {
   text-decoration: none;
   color: black;
 }
 
-#landscape-drainage-photo .landscape-drainage-photo .l-d-p .landscape h4 a:hover, #landscape-drainage-photo .landscape-drainage-photo .l-d-p .drainage h4 a:hover, #landscape-drainage-photo .landscape-drainage-photo .l-d-p .photo-gallery h4 a:hover {
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .landscape h4 a:hover,
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .drainage h4 a:hover,
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .photo-gallery h4 a:hover {
   color: #7b7b7b;
 }
 
-#landscape-drainage-photo .landscape-drainage-photo .l-d-p .landscape p, #landscape-drainage-photo .landscape-drainage-photo .l-d-p .drainage p, #landscape-drainage-photo .landscape-drainage-photo .l-d-p .photo-gallery p {
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .landscape p,
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .drainage p,
+#landscape-drainage-photo .landscape-drainage-photo .l-d-p .photo-gallery p {
   text-align: left;
   font-size: 16px;
   margin-top: 49px;
@@ -844,7 +893,7 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 600;
-  font-family: cabin,sans-serif;
+  font-family: cabin, sans-serif;
   display: block;
   color: #141414;
   padding: 0 53px;
@@ -916,7 +965,7 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 600;
-  font-family: cabin,sans-serif;
+  font-family: cabin, sans-serif;
   display: block;
   color: #141414;
   margin-top: 54px;
@@ -944,21 +993,22 @@
   margin-top: 0;
 }
 
-#principles .principles-decription ol li a, #principles .principles-decription ol li span {
+#principles .principles-decription ol li a,
+#principles .principles-decription ol li span {
   color: green;
   text-decoration: none;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 #principles .principles-decription ol li a:hover {
-  color: #BEEB53;
+  color: #beeb53;
 }
 
 #principles .principles-decription a.btn-primary {
   color: green;
-  background: #BEEB53;
-  border: 3px solid #BEEB53;
+  background: #beeb53;
+  border: 3px solid #beeb53;
   border-radius: 0;
   padding: 6px 6px 6px 26px;
   font-size: 24px;
@@ -968,11 +1018,11 @@
   cursor: pointer;
   z-index: 1;
   text-decoration: none;
-  font-family: cabin,sans-serif;
+  font-family: cabin, sans-serif;
   letter-spacing: 1px;
   margin-top: 33px;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 #principles .principles-decription a.btn-primary:hover {
@@ -991,40 +1041,49 @@
   #principles {
     padding-bottom: 50px;
   }
-  #principles .principles-decription, #principles .principles-h2-img {
+  #principles .principles-decription,
+  #principles .principles-h2-img {
     padding-right: 50px;
     padding-left: 50px;
   }
-  #principles .principles-decription h4, #principles .principles-h2-img h4 {
+  #principles .principles-decription h4,
+  #principles .principles-h2-img h4 {
     text-align: center;
   }
-  #principles .principles-decription ol li, #principles .principles-h2-img ol li {
+  #principles .principles-decription ol li,
+  #principles .principles-h2-img ol li {
     padding-left: 30%;
     white-space: nowrap;
   }
-  #principles .principles-decription ol li:nth-child(n+4), #principles .principles-h2-img ol li:nth-child(n+4) {
+  #principles .principles-decription ol li:nth-child(n + 4),
+  #principles .principles-h2-img ol li:nth-child(n + 4) {
     padding-left: 0;
     padding-right: 30%;
   }
-  #principles .principles-decription div.more, #principles .principles-h2-img div.more {
+  #principles .principles-decription div.more,
+  #principles .principles-h2-img div.more {
     padding-left: 40%;
     padding-right: 40%;
   }
-  #principles .principles-decription div.more a, #principles .principles-h2-img div.more a {
+  #principles .principles-decription div.more a,
+  #principles .principles-h2-img div.more a {
     width: 100%;
   }
 }
 
 @media (max-width: 767px) {
-  #principles .principles-decription ol li, #principles .principles-h2-img ol li {
+  #principles .principles-decription ol li,
+  #principles .principles-h2-img ol li {
     padding-left: 0;
     padding-right: 0;
   }
-  #principles .principles-decription div.more, #principles .principles-h2-img div.more {
+  #principles .principles-decription div.more,
+  #principles .principles-h2-img div.more {
     padding-left: 0;
     padding-right: 0;
   }
-  #principles .principles-decription div.more a, #principles .principles-h2-img div.more a {
+  #principles .principles-decription div.more a,
+  #principles .principles-h2-img div.more a {
     width: auto;
   }
 }
@@ -1050,7 +1109,7 @@
 }
 
 #contemporary .contemporary .contemporary-img::before {
-  content: '';
+  content: "";
   display: block;
   -webkit-transform: skewX(-30deg);
   transform: skewX(-30deg);
@@ -1064,7 +1123,7 @@
 }
 
 #contemporary .contemporary .contemporary-img::after {
-  content: '';
+  content: "";
   display: block;
   -webkit-transform: skewX(30deg);
   transform: skewX(30deg);
@@ -1100,7 +1159,7 @@
   margin-bottom: -31px;
   padding: 87px 23px 87px 15px;
   z-index: 2;
-  background: #BEEB53;
+  background: #beeb53;
 }
 
 #contemporary .contemporary .contemporary-text h2 {
@@ -1109,7 +1168,7 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 600;
-  font-family: cabin,sans-serif;
+  font-family: cabin, sans-serif;
   display: block;
   color: #445649;
 }
@@ -1145,7 +1204,7 @@
 
 #contemporary .contemporary .contemporary-text a {
   color: green;
-  background: #BEEB53;
+  background: #beeb53;
   border: 3px solid green;
   border-radius: 0;
   padding: 6px 6px 6px 26px;
@@ -1156,11 +1215,11 @@
   cursor: pointer;
   z-index: 1;
   text-decoration: none;
-  font-family: cabin,sans-serif;
+  font-family: cabin, sans-serif;
   letter-spacing: 1px;
   margin-top: 33px;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 #contemporary .contemporary .contemporary-text a:hover {
@@ -1173,7 +1232,7 @@
   content: "";
   position: absolute;
   height: 100%;
-  background: #BEEB53;
+  background: #beeb53;
   top: 0;
   right: 108px;
   z-index: -1;
@@ -1187,7 +1246,7 @@
   content: "";
   position: absolute;
   height: 100%;
-  background: #BEEB53;
+  background: #beeb53;
   top: 0;
   right: 108px;
   z-index: -1;
@@ -1261,8 +1320,8 @@
   padding: 20px;
   -webkit-box-shadow: 3px 4px 12px 8px rgba(0, 0, 0, 0.11);
           box-shadow: 3px 4px 12px 8px rgba(0, 0, 0, 0.11);
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 #counters .row-counters .icon-counter-description span i {
@@ -1333,16 +1392,17 @@
   padding: 0 60px;
 }
 
-#garden .garden .garden-text h1, #garden .garden .garden-text h3 {
+#garden .garden .garden-text h1,
+#garden .garden .garden-text h3 {
   width: 100%;
 }
 
 #garden .garden .garden-text h1 {
   font-size: 250px;
-  line-height: .8;
+  line-height: 0.8;
   letter-spacing: 20px;
   text-transform: uppercase;
-  font-family: "unica one" ,cursive;
+  font-family: "unica one", cursive;
 }
 
 #garden .garden .garden-text h3 {
@@ -1361,8 +1421,8 @@
 
 #garden .garden .garden-text div.more a {
   color: green;
-  background: #BEEB53;
-  border: 3px solid #BEEB53;
+  background: #beeb53;
+  border: 3px solid #beeb53;
   border-radius: 0;
   padding: 6px 6px 6px 26px;
   font-size: 24px;
@@ -1372,11 +1432,11 @@
   cursor: pointer;
   z-index: 1;
   text-decoration: none;
-  font-family: cabin,sans-serif;
+  font-family: cabin, sans-serif;
   letter-spacing: 1px;
   margin-top: 300px;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 #garden .garden .garden-text div.more a:hover {
@@ -1434,7 +1494,7 @@
 
 #testimonials {
   height: 500px;
-  background: #BEEB53;
+  background: #beeb53;
   color: #445649;
   padding: 100px 0;
 }
@@ -1458,7 +1518,7 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 600;
-  font-family: cabin,sans-serif;
+  font-family: cabin, sans-serif;
   display: block;
   color: #445649;
 }
@@ -1486,7 +1546,7 @@
 #testimonials .testimonials div#carousel #myCarousel1 h3 {
   font-size: 40px;
   line-height: 1.375;
-  font-family: unica one,cursive;
+  font-family: unica one, cursive;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -1522,7 +1582,8 @@
   overflow: hidden;
 }
 
-#testimonials .testimonials div#carousel #myCarousel1 .carousel-inner .carousel-item .img-slider h3, #testimonials .testimonials div#carousel #myCarousel1 .carousel-inner .carousel-item .img-slider p {
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-inner .carousel-item .img-slider h3,
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-inner .carousel-item .img-slider p {
   overflow: hidden;
 }
 
@@ -1532,36 +1593,43 @@
   }
 }
 
-#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev, #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next {
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev,
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next {
   width: 50px;
   bottom: auto;
   opacity: 1;
 }
 
-#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev span, #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next span {
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev span,
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next span {
   width: 100%;
 }
 
-#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev span i, #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next span i {
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev span i,
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next span i {
   font-size: 60px;
   color: green;
   width: 100%;
 }
 
-#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev span i::before, #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next span i::before {
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev span i::before,
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next span i::before {
   margin: 0;
   width: 100%;
 }
 
-#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev:hover, #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next:hover {
-  opacity: .5;
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev:hover,
+#testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next:hover {
+  opacity: 0.5;
 }
 
 @media (max-width: 991px) {
-  #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev, #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next {
+  #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev,
+  #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next {
     bottom: 80%;
   }
-  #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev span i, #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next span i {
+  #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev span i,
+  #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-next span i {
     font-size: 50px;
   }
 }
@@ -1607,16 +1675,22 @@
 }
 
 #footer {
-  background: #BEEB53;
+  background: #beeb53;
   color: green;
 }
 
 #footer .container-footer {
   height: 100%;
-  padding: 50px 15px;
+  padding: 50px 0px;
 }
 
-#footer .container-footer .adress, #footer .container-footer .social-media, #footer .container-footer .privacy {
+#footer .container-footer .row {
+  margin: 0;
+}
+
+#footer .container-footer .adress,
+#footer .container-footer .social-media,
+#footer .container-footer .privacy {
   padding: 0;
 }
 
@@ -1636,14 +1710,15 @@
 
 #footer .container-footer .social-media .row-icon {
   width: 100%;
+  height: 100%;
   margin: 0;
 }
 
 #footer .container-footer .social-media .row-icon a {
   display: block;
   color: green;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 #footer .container-footer .social-media .row-icon a i {
@@ -1666,5 +1741,14 @@
   font-family: cabin, sans-serif;
   text-align: center;
   text-transform: uppercase;
+}
+
+#footer .container-footer .privacy a {
+  color: green;
+  text-decoration: none;
+}
+
+#footer .container-footer .privacy a:hover {
+  color: #445649;
 }
 /*# sourceMappingURL=style.css.map */
