@@ -1347,6 +1347,7 @@ $brightGreen: #BEEB53;
             i {
               font-size: 60px;
               color:green;
+              width:100%;
               &::before {
                 margin: 0;
                 width:100%;
@@ -1358,23 +1359,22 @@ $brightGreen: #BEEB53;
           }
           @media(max-width:991px) {
             bottom: 80%;
+            span {
+              i {
+                font-size: 50px;
+              }
+            }
           }
         }
         .carousel-control-next {
           right: -100px;
-          @media(max-width:1350px) and (min-width:992px) {
-            right:0;
-          }
-          @media(max-width: 991px) {
+          @media(max-width:1350px) {
             right:0;
           }
         }
         .carousel-control-prev {
           left: -100px;
-          @media(max-width:1350px) and (min-width:992px) {
-            left:-0;
-          }
-          @media(max-width: 991px) {
+          @media(max-width:1350px) {
             left:0;
           }
         }
@@ -1399,5 +1399,52 @@ $brightGreen: #BEEB53;
   }
 }
 #footer {
-  height:200px;
+  background:$brightGreen;
+  color: green;
+  .container-footer {
+    height:100%;
+    padding: 50px 15px;
+    .adress, .social-media, .privacy {
+      padding:0;
+    }
+    .adress {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 600;
+      font-family: cabin, sans-serif;
+      text-transform: uppercase;
+      @media(max-width: 991px) {
+        text-align: center;
+      }
+    }
+    .social-media {
+      .row-icon {
+        width:100%;
+        margin:0;
+        a {
+          display:block;
+          color: green;
+          transition: .3s all ease;
+          i {
+            width:100%;
+            font-size:50px;
+            &::before {
+              width: 100%;
+            }
+          }
+          &:hover {
+            color:#445649;
+          }
+        }
+      }
+    }
+    .privacy {
+      font-size: 20px;
+      line-height: 90px;
+      font-weight: 600;
+      font-family: cabin, sans-serif;
+      text-align:center;
+      text-transform: uppercase;
+    }
+  }
 }
