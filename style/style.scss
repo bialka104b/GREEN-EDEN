@@ -1,12 +1,9 @@
-// $a: 100%;
-// $b: 50px;
-
-// div {
-//   height: calc(#{$a} - #{$b}); linia calc w sass zapisz to sobie
-//   background: #e53b2c;
-// }
+//AUTHOR: https://github.com/bialka104b bialka104b@interia.pl
 $brightGreen: #beeb53;
-
+* {
+  cursor:default;
+}
+a {cursor:pointer;}
 #navigation {
   position: relative;
   height: 120px;
@@ -110,7 +107,7 @@ $brightGreen: #beeb53;
                 left: 0;
                 right: 0;
                 z-index: -1;
-                transition: 0.3s;
+                transition: 0.3s all ease;
                 background: green;
               }
             }
@@ -123,7 +120,7 @@ $brightGreen: #beeb53;
               left: 0;
               right: 0;
               z-index: -1;
-              transition: 0.3s;
+              transition: 0.3s all ease;
               background: $brightGreen;
             }
           }
@@ -742,7 +739,7 @@ $brightGreen: #beeb53;
             text-decoration: none;
             color: black;
             &:hover {
-              color: rgb(123, 123, 123);
+              color: #445649;
             }
           }
         }
@@ -966,11 +963,11 @@ $brightGreen: #beeb53;
         transform: skewX(30deg);
         background-color: #445649;
         position: absolute;
-        bottom: -31px;
+        bottom: -30px;
         left: 45vw;
         z-index: 1;
         width: 5vw;
-        height: 31px;
+        height: 30.5px;
       }
       @media (max-width: 1520px) and (min-width: 1373px) {
         &::after,
@@ -1129,9 +1126,11 @@ $brightGreen: #beeb53;
         padding: 20px;
         box-shadow: 3px 4px 12px 8px rgba(0, 0, 0, 0.11);
         transition: 0.3s all ease;
+        cursor: pointer;
         i {
           color: green;
           font-size: 100px;
+          cursor:pointer;
           &::before {
             margin: 0;
           }
@@ -1335,6 +1334,9 @@ $brightGreen: #beeb53;
           li.active {
             background: white;
           }
+          @media(min-width: 1200px) {
+            bottom: 0px;
+          }
         }
         .carousel-inner {
           padding: 0 100px;
@@ -1363,6 +1365,7 @@ $brightGreen: #beeb53;
               font-size: 60px;
               color: green;
               width: 100%;
+              cursor: pointer;
               &::before {
                 margin: 0;
                 width: 100%;
@@ -1449,6 +1452,7 @@ $brightGreen: #beeb53;
           i {
             width: 100%;
             font-size: 50px;
+            cursor:pointer;
             &::before {
               width: 100%;
             }

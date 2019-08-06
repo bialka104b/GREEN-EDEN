@@ -1,3 +1,11 @@
+* {
+  cursor: default;
+}
+
+a {
+  cursor: pointer;
+}
+
 #navigation {
   position: relative;
   height: 120px;
@@ -122,8 +130,8 @@
   left: 0;
   right: 0;
   z-index: -1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   background: green;
 }
 
@@ -137,8 +145,8 @@
   left: 0;
   right: 0;
   z-index: -1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   background: #beeb53;
 }
 
@@ -858,7 +866,7 @@
 #landscape-drainage-photo .landscape-drainage-photo .l-d-p .landscape h4 a:hover,
 #landscape-drainage-photo .landscape-drainage-photo .l-d-p .drainage h4 a:hover,
 #landscape-drainage-photo .landscape-drainage-photo .l-d-p .photo-gallery h4 a:hover {
-  color: #7b7b7b;
+  color: #445649;
 }
 
 #landscape-drainage-photo .landscape-drainage-photo .l-d-p .landscape p,
@@ -1129,11 +1137,11 @@
   transform: skewX(30deg);
   background-color: #445649;
   position: absolute;
-  bottom: -31px;
+  bottom: -30px;
   left: 45vw;
   z-index: 1;
   width: 5vw;
-  height: 31px;
+  height: 30.5px;
 }
 
 @media (max-width: 1520px) and (min-width: 1373px) {
@@ -1322,11 +1330,13 @@
           box-shadow: 3px 4px 12px 8px rgba(0, 0, 0, 0.11);
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
+  cursor: pointer;
 }
 
 #counters .row-counters .icon-counter-description span i {
   color: green;
   font-size: 100px;
+  cursor: pointer;
 }
 
 #counters .row-counters .icon-counter-description span i::before {
@@ -1570,6 +1580,12 @@
   background: white;
 }
 
+@media (min-width: 1200px) {
+  #testimonials .testimonials div#carousel #myCarousel1 ol.carousel-indicators {
+    bottom: 0px;
+  }
+}
+
 #testimonials .testimonials div#carousel #myCarousel1 .carousel-inner {
   padding: 0 100px;
 }
@@ -1610,6 +1626,7 @@
   font-size: 60px;
   color: green;
   width: 100%;
+  cursor: pointer;
 }
 
 #testimonials .testimonials div#carousel #myCarousel1 .carousel-control-prev span i::before,
@@ -1724,6 +1741,7 @@
 #footer .container-footer .social-media .row-icon a i {
   width: 100%;
   font-size: 50px;
+  cursor: pointer;
 }
 
 #footer .container-footer .social-media .row-icon a i::before {

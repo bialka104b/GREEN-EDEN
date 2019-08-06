@@ -1,11 +1,4 @@
-// $(document).ready(function(){
-//     $(window).bind('scroll', function () {
-//         var num = 
-//         if ($(window).scrollTop() > num) {
-
-//         }
-//     });
-// });
+//AUTHOR: https://github.com/bialka104b bialka104b@interia.pl
 $('.number').each(function() {
     $(this).prop('Counter', 0).animate({
       Counter: $(this).text()
